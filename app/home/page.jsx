@@ -29,7 +29,7 @@ export default function Home() {
             }
         };
 
-        console.log("\n============== BUSCA INICIADA ==============");
+        console.log("BUSCA INICIADA");
         console.log(`📊 Cache anterior: ${cache.size} páginas`);
 
         let total = totalPages;
@@ -86,7 +86,7 @@ export default function Home() {
         for (const [key, val] of cache.entries()) {
             console.log(`📦 ${key}: ${val.results.length} personagens`);
         }
-        console.log("============== FIM DA BUSCA ==============\n");
+        console.log(" FIM DA BUSCA ");
     };
 
     useEffect(() => {

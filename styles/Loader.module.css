@@ -1,17 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    
 }
 
 .image {    
     border-radius: 50%;
 }
 
+.messageContainer {
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem; 
+}
+
 .message {
-    padding: 1.50rem;  
+    padding: 0;
     color: white;
-    font-family: 'Arial', sans-serif;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.loadingDots {
+    display: flex;
+    align-items: center;
+    font-size: 3rem; 
+    color: #ffffff;
+}
+
+.loadingDots span {
+    animation: blink 1.5s infinite;
+    margin: 0 2px; 
+}
+
+.loadingDots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loadingDots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0%, 20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

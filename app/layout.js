@@ -8,7 +8,7 @@ import "./globals.css";
 				return (
 					<html>
 						<head>
-							<link rel="icon" href="./icon-32.png" />
+							<link rel="icon" href="./icon-rick.png" />
 						</head>
 						<body>{children}</body>
 					</html>
