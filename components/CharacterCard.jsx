@@ -9,10 +9,10 @@ export default function CharacterCard( {character, onClick} ) {
                 className={styles.avatar}
             />
             <h3 className={styles.title}>{character.name}</h3>
-            <p>{character.status}</p>
-            <p>{character.species}</p>
-            <p>{character.type || "Sem tipo"}</p>
-            <p>{character.gender}</p>
+            <p className={styles.paragraph}>{character.status}</p>
+            <p className={styles.paragraph}>{character.species}</p>
+            <p className={styles.paragraph}>{character.type || "Sem tipo"}</p>
+            <p className={styles.paragraph}>{character.gender}</p>
         </div>
     )
 }

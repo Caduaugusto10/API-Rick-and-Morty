@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
 .card {
     width: 275px;
     background-color: white;
@@ -17,6 +19,14 @@
 }
 
 .title {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 10px 0 5px;
     font-size: 20px;
+}
+
+.paragraph {
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
 }

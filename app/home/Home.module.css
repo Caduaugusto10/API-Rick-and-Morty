@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
 .container {
     background-image: url("/background.png");
     background-size: cover;
@@ -17,6 +19,9 @@
     margin-bottom: 2rem;
     color: white;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .controls {
@@ -32,9 +37,8 @@
     padding: 12px 16px;
     border-radius: 10px;
     font-size: 1rem;
-    background-color: #ffffff57;
-    color: white;
-    border: 1px solid #00c6ff55;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     backdrop-filter: blur(4px);
     outline: none;
     transition: all 0.3s ease;
@@ -45,8 +49,8 @@
 }
 
 .input:focus {
-    border-color: #00c6ff;
-    box-shadow: 0 0 0 3px rgba(0, 198, 255, 0.3);
+    border-color: #9f3214;
+    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.568);
 }
 
 .buttonSearch,
@@ -96,14 +100,22 @@
     box-shadow: 0 2px 4px rgba(0, 114, 255, 0.2);
 }
 
+.buttonNav:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
 
 .pageIndicator {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background-color: white;
     padding: 8px 16px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    font-family: 'Arial', sans-serif;
+
 }
 
 .loading {
@@ -157,12 +169,13 @@
 .loaderWrapper {
     opacity: 1;
     transition: opacity 0.3s ease-out;
-  }
-  
-  .loaderWrapper.hidden {
+}
+
+.loaderWrapper.hidden {
     opacity: 0;
     pointer-events: none;
-  }
+}
+
 @media (max-width: 600px) {
     .input {
         width: 100%;
